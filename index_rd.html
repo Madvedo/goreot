@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv='X-UA-Compatible' content='IE=Edge' />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Горе от</title>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+
+<style>
+	.container {
+		top: -15px;
+		z-index:3;
+        position: absolute;
+		opacity: 0.4;
+		cursor: pointer;
+		
+	}
+
+
+
+	.full-screen__body {
+
+	background-color: rgba(0, 0, 0, 0.0);
+
+}
+
+</style>
+
+
+<style type="text/css">    
+	* { margin: 0; padding: 0; }
+	p { padding: 10px; }
+	#left { position: absolute; left: 130px; top: 5px; width: 15%; }
+	#right { position: absolute; right: 130px; top: 5px; width: 15%; } 
+	#down {
+		position: absolute; right: 100px; top: 400px; width: 50%; 
+	}
+	#down1 {
+		position: absolute; right: 65px; top: 450px; width: 70%; 
+	}
+#soundpic {
+	width: 150%;
+}
+
+
+	
+	#scale {  
+    opacity: 0.9; 
+    }
+    
+    #scale:hover {
+		
+        transform:   scale(1.5); /* Поворачивае на 45 грудов */
+        transition: 2.0s all; /* задаем время поворота в 1 секунду и анимируем весь элемент */
+     
+        opacity: 1; /* ховер - наведение на элемент. При наведение на элемент прозрачность равняется 1, что означает - элемент непрозрачен */
+     
+    }
+	#scale1 {  
+		opacity: 0.9; 
+		}
+		
+		#scale1:hover {
+			transform:   scale(1.2); /* Поворачивае на 45 грудов */
+			transition: 1.5s all; /* задаем время поворота в 1 секунду и анимируем весь элемент */
+		 
+			opacity: 1; /* ховер - наведение на элемент. При наведение на элемент прозрачность равняется 1, что означает - элемент непрозрачен */
+		 
+		}
+
+ </style>
+
+
+
+
+	</head>
+
+
+
+
+	<body>
+<div class="container">
+
+	
+	<div class="wrapper3">
+		<div class="player3">
+		  <div class="title3"></div>
+		  <div class="Cover3">
+			<img class="cover__img3" src="/img/" alt="" />
+		  </div>
+		 
+		  <audio autoplay
+			class="audio3"
+			src="/audio/1.mp3"
+		  ></audio>
+		
+		  <div class="progress__container3">
+			<div class="progress3"></div>
+		  </div>
+  
+		  <div class="buttons3">
+			<div class="btn prev3"> </div>
+			<div class="btn play3">
+			  <img id="soundpic" class="img__src3" src="/img/off.jpg" alt="btn" />
+			</div>
+			<div class="btn next3"> </div>
+		  </div>
+		</div>
+	  </div>
+  
+	  <script src="/player/js/main3.js"></script>
+
+</div>
+
+
+
+<div class="wrapper">
+
+
+
+			<!-- Фуллскрин -->
+			
+			<div class="full-screen">
+
+	
+			
+
+				<div class="full-screen__body">
+
+
+				
+
+
+
+					<div class="full-screen__title">
+						
+						<img id="down" src="/img/Gore Ot (Logo white).png" class="responsive" alt="logo">
+					
+					</div>
+					<div class="full-screen__text">
+						
+						<img id="down1" src="/img/Зима была холодной (белый)@4x.png" class="responsive" alt="logo1">
+					
+					</div>
+<div id="left">
+					<a     href="https://vk.com/goreot21" target="_blank" >
+						<img id="scale" src="/img/vk.png" class="responsive" alt="logo">
+					</a>
+				</div>
+
+
+				<div id="right">			
+				<a     href="https://www.youtube.com/watch?v=ELhOmcWp7nQ" >
+					<img id="scale1" src="/img/yt.png" class="responsive" alt="logo1">
+				</a>
+			</div>
+
+
+				</div>
+				<video autoplay loop muted playsinline webkit-playinginline class="full-screen__video">
+					<source src="videos/1.mp4">
+					
+					
+				</video>
+				
+			</div>
+			
+			<!-- Адаптив -->
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
+
+
